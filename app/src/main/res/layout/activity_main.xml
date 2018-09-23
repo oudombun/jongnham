@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/toolbartest"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="70dp"
+            android:background="@drawable/couponbg"
+            android:drawableRight="@drawable/planeticon"
+            android:gravity="center"
+            android:paddingLeft="60dp"
+            android:paddingRight="10dp"
+            android:text="Discount Coupon"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbartest"
+        android:background="@color/background"
+        android:id="@+id/threebtn"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btntopswipe"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/simplebtnbg"
+            android:text="Top Swipe"
+            android:tag="0"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnhightest"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/activebtnbg"
+            android:text="Highest Discount"
+            android:tag="0"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnnewest"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/simplebtnbg"
+            android:text="Newest"
+            android:tag="0"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/fragment_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/navigation_id">-->
+    <!--</FrameLayout>-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="393dp"
+        android:layout_below="@+id/threebtn"
+        android:layout_above="@+id/navigation_id"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

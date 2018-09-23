@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="40dp" android:width="40dp">
+        <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/colorPrimary"></solid>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/globe"
+        android:width="32dp"
+        android:height="32dp"
+        android:gravity="center"
+        />
+</layer-list>
